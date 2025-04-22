@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    //sets maximum possible health
     public int maxHealth = 100;
+    //used so the starting health is always the max value 
     public int currentHealth;
 
     public HealthBar healthBar;
@@ -12,7 +14,9 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //sets starting health
         currentHealth = maxHealth;
+        //the health bar from the HealthBar script is called to pass in max health
         healthBar.SetMaxHealth(maxHealth);
     }
 
@@ -25,10 +29,12 @@ public class Player : MonoBehaviour
         }
     }
 
+    //manages health decrease
     void TakeDamage(int damage)
     {
+        //reduces hralth 
         currentHealth -= damage;
-
+        //updates the healthbar
         healthBar.SetHealth(currentHealth);
     }
 
