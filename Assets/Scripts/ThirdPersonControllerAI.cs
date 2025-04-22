@@ -105,8 +105,17 @@ namespace StarterAssets
             		{
 				thisAgent.SetDestination(Target.position);
 			}
+			else if (thisAgent.remainingDistance < 0.5f)
+			{
+				//once agent reaches destination
 
-			JumpAndGravity();
+				//set a new destination
+				createRandomDestination();
+
+                //move to that destination
+            }
+
+            JumpAndGravity();
 			GroundedCheck();
 
 			if (Sprinting) thisAgent.speed = SprintSpeed;
@@ -263,5 +272,18 @@ namespace StarterAssets
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
-	}
+
+
+		private void createRandomDestination()
+		{
+			Debug.Log("create new desitnation");
+			//make a new destination
+			var x = Random.Range(-10, 10);
+            var z = Random.Range(-10, 10);
+            var destination = new Vector3(x, 0, z);
+			this.thisAgent.SetDestination(destination);
+		}
+
+
+    }
 }
