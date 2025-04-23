@@ -28,6 +28,11 @@ public class Player : MonoBehaviour
         {
             TakeDamage(20);
         }*/
+
+        if (currentHealth <= 0)
+        {
+            PlayerManager.isGameOver = true;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
