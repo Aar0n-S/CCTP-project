@@ -276,7 +276,7 @@ namespace StarterAssets
 
 		private void createRandomDestination()
 		{
-			Debug.Log("create new desitnation");
+			//Debug.Log("create new desitnation");
 			//make a new destination
 			var x = Random.Range(-10, 10);
             var z = Random.Range(-10, 10);

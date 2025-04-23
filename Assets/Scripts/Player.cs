@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,8 +24,17 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
+            TakeDamage(20);
+        }*/
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "NPC")
+        {
+            Debug.Log("hit");
             TakeDamage(20);
         }
     }

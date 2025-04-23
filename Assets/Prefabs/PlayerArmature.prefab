@@ -1893,9 +1893,10 @@ GameObject:
   - component: {fileID: 4204148841160830371}
   - component: {fileID: 2407071697224886318}
   - component: {fileID: 7946559120260927220}
+  - component: {fileID: -5366621485943606418}
   m_Layer: 8
   m_Name: PlayerArmature
-  m_TagString: Player
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2016,6 +2017,27 @@ MonoBehaviour:
   Target: {fileID: 0}
   Sprinting: 0
   Jump: 0
+--- !u!65 &-5366621485943606418
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6961329587534631946}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5, y: 2, z: 1.5}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &7238989195004965087
 GameObject:
   m_ObjectHideFlags: 0
