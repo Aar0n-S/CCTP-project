@@ -1,7 +1,7 @@
-//using System.Collections;
-//using System.Collections.Generic;
-using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -24,7 +24,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (isGameOver == true)
         {
-            //SceneManager.LoadScene("Level01");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Debug.Log("game over");
         }
     }
