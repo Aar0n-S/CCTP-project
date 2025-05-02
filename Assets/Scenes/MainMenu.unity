@@ -2978,10 +2978,10 @@ MonoBehaviour:
     to return to their view of normality, this could be shown by an increase in the
     number of questions they ask. Repetitive phrases can be used to calm themselves,
     however this can be distracting for others. \r\n\nOne method to help with this
-    is to tell them of possible changes at least a day in advance. This can also
-    be supported by visual aids. Another method is to get the student to write down
-    the repeated question on a white board or sticky note, then a reply can be added.
-    This could then be less disruptive for other students. \r\n"
+    is to tell them of possible changes at least a day in advance. Another method
+    is to get the student to write down the repeated question on a white board or
+    sticky note, then a reply can be added. Changing routines such as a route a student
+    walks can be stressful but with warning and questions explained this can be reduced. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

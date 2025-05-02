@@ -9,6 +9,7 @@ public class RestartButtonScript : MonoBehaviour
     //reset to the game scene
     public void RestartGame()
     {
+        //restarts the crowd scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 

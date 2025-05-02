@@ -24,11 +24,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(20);
-        }*/
 
+        //if the players health is <= 0 then isGameOver is called when it is set to true
         if (currentHealth <= 0)
         {
             PlayerManager.isGameOver = true;
@@ -37,9 +34,9 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //if the player collides with an entity with the NPC tag they loose 20 health
         if(other.tag == "NPC")
         {
-            Debug.Log("hit");
             TakeDamage(20);
         }
     }

@@ -22,10 +22,10 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if gameOver is true then a scene is shown that allows for a restart
         if (isGameOver == true)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            Debug.Log("game over");
         }
     }
 }

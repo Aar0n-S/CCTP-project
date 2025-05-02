@@ -11,7 +11,7 @@ public class Navigation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       agent = GetComponent<NavMeshAgent>(); 
+        agent = GetComponent<NavMeshAgent>(); 
     }
 
     // Update is called once per frame
